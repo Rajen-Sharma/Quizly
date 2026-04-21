@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuantixLabs — Games & Entertainment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --white: #ffffff;
+    --off-white: #f8f7f4;
+    --light: #f0eeea;
+    --border: #e4e1da;
+    --muted: #9b9690;
+    --body: #3d3a35;
+    --heading: #1a1714;
+    --accent: #2a5bd7;
+    --accent-light: #eef2fc;
+    --accent-muted: #6b8ee8;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--body);
+    background: var(--white);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  .nav-logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.35rem;
+    color: var(--heading);
+    text-decoration: none;
+    letter-spacing: -0.01em;
+  }
+
+  .nav-logo span {
+    color: var(--accent);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--heading); }
+
+  .nav-cta {
+    background: var(--heading);
+    color: var(--white) !important;
+    padding: 0.4rem 1.1rem;
+    border-radius: 6px;
+    font-size: 0.875rem !important;
+    transition: background 0.2s !important;
+  }
+
+  .nav-cta:hover { background: var(--accent) !important; color: var(--white) !important; }
+
+  /* HERO */
+  .hero {
+    padding: 7rem 2rem 5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 0.3rem 0.85rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.5rem, 5vw, 3.6rem);
+    color: var(--heading);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+    color: var(--muted);
+    font-weight: 300;
+    max-width: 440px;
+    margin-bottom: 2rem;
+    line-height: 1.75;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--heading);
+    color: var(--white);
+    padding: 0.7rem 1.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .btn-primary:hover { background: var(--accent); transform: translateY(-1px); }
+
+  .btn-secondary {
+    color: var(--body);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s;
+  }
+
+  .btn-secondary:hover { color: var(--accent); }
+
+  .btn-arrow { font-size: 1.1rem; }
+
+  /* HERO VISUAL */
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .app-card {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.25rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .app-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.07); }
+
+  .app-card.featured {
+    grid-column: span 2;
+    background: var(--heading);
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .app-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .app-card.featured .app-icon { margin-bottom: 0; }
+
+  .icon-blue { background: #dbeafe; }
+  .icon-purple { background: #ede9fe; }
+  .icon-coral { background: #fee2e2; }
+  .icon-green { background: #d1fae5; }
+
+  .app-card-name {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--heading);
+    margin-bottom: 0.2rem;
+  }
+
+  .app-card.featured .app-card-name { color: var(--white); font-size: 0.9rem; }
+
+  .app-card-label {
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+
+  .app-card.featured .app-card-label { color: rgba(255,255,255,0.55); font-size: 0.8rem; }
+
+  .coming-badge {
+    margin-left: auto;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.8);
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+    flex-shrink: 0;
+  }
+
+  /* STATS */
+  .stats-bar {
+    background: var(--off-white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 2rem;
+  }
+
+  .stats-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .stat-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: var(--heading);
+    line-height: 1.1;
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 0.25rem;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  /* SECTION BASE */
+  section {
+    padding: 5rem 2rem;
+  }
+
+  .section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    color: var(--heading);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    max-width: 560px;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    color: var(--muted);
+    font-weight: 300;
+    max-width: 520px;
+    margin-bottom: 3rem;
+    line-height: 1.75;
+  }
+
+  /* ABOUT */
+  .about {
+    background: var(--white);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .values-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .value-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .value-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+    margin-top: 0.55rem;
+  }
+
+  .value-title {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--heading);
+    margin-bottom: 0.2rem;
+  }
+
+  .value-desc {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  /* APPS SECTION */
+  .apps-section {
+    background: var(--off-white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .apps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .app-feature-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.75rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .app-feature-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+
+  .app-feature-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 1.25rem;
+  }
+
+  .app-feature-name {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--heading);
+    margin-bottom: 0.4rem;
+  }
+
+  .app-feature-genre {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .app-feature-desc {
+    font-size: 0.875rem;
+    color: var(--muted);
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+  }
+
+  .app-status {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.7rem;
+    border-radius: 100px;
+    display: inline-block;
+  }
+
+  .status-coming { background: #fef9c3; color: #854d0e; }
+  .status-soon { background: #dcfce7; color: #166534; }
+  .status-dev { background: var(--accent-light); color: var(--accent); }
+
+  /* HOW WE BUILD */
+  .process-section { background: var(--white); }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .process-step {
+    padding: 2rem 1.5rem;
+    border-right: 1px solid var(--border);
+  }
+
+  .process-step:last-child { border-right: none; }
+
+  .step-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: var(--accent-muted);
+    opacity: 0.4;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+
+  .step-title {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--heading);
+    margin-bottom: 0.4rem;
+  }
+
+  .step-desc {
+    font-size: 0.83rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* CONTACT */
+  .contact-section {
+    background: var(--heading);
+  }
+
+  .contact-section .section-tag { color: var(--accent-muted); }
+  .contact-section .section-title { color: var(--white); max-width: none; }
+  .contact-section .section-subtitle { color: rgba(255,255,255,0.5); max-width: 460px; }
+
+  .contact-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .contact-link:hover { background: rgba(255,255,255,0.1); }
+
+  .contact-link-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .contact-link-label {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 0.1rem;
+  }
+
+  .contact-link-value {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.85);
+    font-weight: 400;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--heading);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+  }
+
+  .footer-copy {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.3);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 1.25rem 3rem; }
+    .hero-visual { order: -1; }
+    .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .apps-grid { grid-template-columns: 1fr; }
+    .process-steps { grid-template-columns: 1fr 1fr; }
+    .process-step { border-bottom: 1px solid var(--border); }
+    .stats-inner { grid-template-columns: repeat(2, 1fr); }
+    .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .nav-links { display: none; }
+    footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Quantix<span>Labs</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#apps">Apps</a></li>
+    <li><a href="#contact" class="nav-cta">Contact us</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <span class="hero-tag">Mobile Games & Entertainment</span>
+    <h1>Games that <em>stick</em> with you</h1>
+    <p>QuantixLabs builds mobile entertainment experiences — thoughtfully designed, endlessly playable. Coming soon to Google Play.</p>
+    <div class="hero-actions">
+      <a href="#apps" class="btn-primary">See our apps <span class="btn-arrow">↓</span></a>
+      <a href="#contact" class="btn-secondary">Get in touch <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="app-cards">
+      <div class="app-card featured">
+        <div class="app-icon icon-blue" style="background:#dbeafe;">🎮</div>
+        <div>
+          <div class="app-card-name">QuantixLabs Studio</div>
+          <div class="app-card-label">Building mobile experiences</div>
+        </div>
+        <div class="coming-badge">2025</div>
+      </div>
+      <div class="app-card">
+        <div class="app-icon icon-purple">🧩</div>
+        <div class="app-card-name">Puzzle</div>
+        <div class="app-card-label">Coming soon</div>
+      </div>
+      <div class="app-card">
+        <div class="app-icon icon-coral">⚡</div>
+        <div class="app-card-name">Arcade</div>
+        <div class="app-card-label">In development</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div>
+      <span class="stat-num">100%</span>
+      <span class="stat-label">Mobile-first</span>
+    </div>
+    <div>
+      <span class="stat-num">Android</span>
+      <span class="stat-label">Google Play</span>
+    </div>
+    <div>
+      <span class="stat-num">AU</span>
+      <span class="stat-label">Based in Australia</span>
+    </div>
+    <div>
+      <span class="stat-num">Free</span>
+      <span class="stat-label">To play</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div>
+        <span class="section-tag">About us</span>
+        <h2 class="section-title">We make games worth coming back to</h2>
+        <p class="section-subtitle">QuantixLabs is an independent mobile studio focused on crafting games and entertainment apps that respect your time and reward your attention.</p>
+      </div>
+      <ul class="values-list">
+        <li class="value-item">
+          <div class="value-dot"></div>
+          <div>
+            <div class="value-title">Player-first design</div>
+            <div class="value-desc">Every decision starts with the experience. We don't ship something we wouldn't enjoy ourselves.</div>
+          </div>
+        </li>
+        <li class="value-item">
+          <div class="value-dot"></div>
+          <div>
+            <div class="value-title">Clean, honest monetisation</div>
+            <div class="value-desc">No dark patterns. No pay-to-win. Games are free to play with optional extras that feel fair.</div>
+          </div>
+        </li>
+        <li class="value-item">
+          <div class="value-dot"></div>
+          <div>
+            <div class="value-title">Lightweight & polished</div>
+            <div class="value-desc">We obsess over performance. Apps are fast, battery-friendly, and work on a wide range of Android devices.</div>
+          </div>
+        </li>
+        <li class="value-item">
+          <div class="value-dot"></div>
+          <div>
+            <div class="value-title">Privacy by default</div>
+            <div class="value-desc">We collect only what we need. Your data stays yours.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- APPS -->
+<section class="apps-section" id="apps">
+  <div class="section-inner">
+    <span class="section-tag">Our apps</span>
+    <h2 class="section-title">Games in the works</h2>
+    <p class="section-subtitle">Our first titles are in development. Here's a glimpse at what's coming to Google Play.</p>
+
+    <div class="apps-grid">
+      <div class="app-feature-card">
+        <div class="app-feature-icon icon-purple">🧩</div>
+        <div class="app-feature-name">PuzzleQ</div>
+        <div class="app-feature-genre">Puzzle / Brain Training</div>
+        <p class="app-feature-desc">Daily logic puzzles with a clean interface and satisfying challenge curve. Perfect for commutes and quiet moments.</p>
+        <span class="app-status status-coming">Coming soon</span>
+      </div>
+      <div class="app-feature-card">
+        <div class="app-feature-icon icon-coral">⚡</div>
+        <div class="app-feature-name">Quickfire</div>
+        <div class="app-feature-genre">Arcade / Reaction</div>
+        <p class="app-feature-desc">Fast-paced arcade action that tests your reflexes. Easy to pick up, hard to put down. Compete on the leaderboard.</p>
+        <span class="app-status status-dev">In development</span>
+      </div>
+      <div class="app-feature-card">
+        <div class="app-feature-icon icon-green">🌿</div>
+        <div class="app-feature-name">Trivia Hub</div>
+        <div class="app-feature-genre">Trivia / Quiz</div>
+        <p class="app-feature-desc">Thousands of questions across pop culture, science, sport, and more. Play solo or challenge friends.</p>
+        <span class="app-status status-dev">In development</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE BUILD -->
+<section class="process-section">
+  <div class="section-inner">
+    <span class="section-tag">How we work</span>
+    <h2 class="section-title">From idea to Play Store</h2>
+    <p class="section-subtitle" style="margin-bottom: 2.5rem;">A lean, focused process that keeps the player at the centre of every step.</p>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <div class="step-title">Concept</div>
+        <p class="step-desc">We start with a simple question — is this fun? Rapid prototypes before any polish.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <div class="step-title">Build</div>
+        <p class="step-desc">Lean development cycles. We ship features, not roadmaps, and iterate quickly based on feedback.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <div class="step-title">Test</div>
+        <p class="step-desc">Real device testing across a wide range of Android hardware. Performance and battery are non-negotiable.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <div class="step-title">Launch</div>
+        <p class="step-desc">Released on Google Play with ongoing updates. We stay active — bugs get fixed, content gets added.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="section-inner">
+    <div class="contact-inner">
+      <div>
+        <span class="section-tag">Get in touch</span>
+        <h2 class="section-title" style="color: var(--white);">Let's talk</h2>
+        <p class="section-subtitle">Whether you want to collaborate, provide feedback on a game, or just say hello — we'd love to hear from you.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:hello@quantixlabs.org" class="contact-link">
+          <div class="contact-link-icon">✉️</div>
+          <div>
+            <div class="contact-link-label">Email</div>
+            <div class="contact-link-value">hello@quantixlabs.org</div>
+          </div>
+        </a>
+        <a href="https://play.google.com/store" target="_blank" class="contact-link">
+          <div class="contact-link-icon">📱</div>
+          <div>
+            <div class="contact-link-label">Google Play</div>
+            <div class="contact-link-value">QuantixLabs on Play Store</div>
+          </div>
+        </a>
+        <a href="https://www.quantixlabs.org" class="contact-link">
+          <div class="contact-link-icon">🌐</div>
+          <div>
+            <div class="contact-link-label">Website</div>
+            <div class="contact-link-value">www.quantixlabs.org</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#" class="footer-logo">QuantixLabs</a>
+  <span class="footer-copy">© 2025 QuantixLabs. All rights reserved.</span>
+</footer>
+
+</body>
+</html>
