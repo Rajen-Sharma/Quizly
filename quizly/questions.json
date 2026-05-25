@@ -1,6 +1,17 @@
 {
   "topics": [
     {
+      "icon": "🧠",
+      "name": "Brain Teasers",
+      "color": "A259FF",
+      "subs": [
+        {
+          "name": "Logic Puzzles",
+          "icon": "🧩"
+        }
+      ]
+    },
+    {
       "icon": "🎨",
       "name": "Art",
       "color": "FF6B9D",
@@ -325,6 +336,258 @@
       ]
     }
   ],
+"Logic Puzzles": [
+  {
+    "text": "If 2 is company and 3 is a crowd, what are 4 and 5?",
+    "options": ["Seven", "Nine", "Eight", "Ten"],
+    "correctIndex": 1
+  },
+  {
+    "text": "What has keys but cannot open locks?",
+    "options": ["Keyboard", "Map", "Piano", "Locksmith"],
+    "correctIndex": 2
+  },
+  {
+    "text": "What gets wetter as it dries?",
+    "options": ["Sponge", "Towel", "Water", "Steam"],
+    "correctIndex": 1
+  },
+  {
+    "text": "What word becomes shorter when you add two letters to it?",
+    "options": ["Short", "Long", "Little", "Tiny"],
+    "correctIndex": 0
+  },
+  {
+    "text": "I speak without a mouth and hear without ears. What am I?",
+    "options": ["Shadow", "Echo", "Wind", "Thought"],
+    "correctIndex": 1
+  },
+  {
+    "text": "If you have me, you want to share me. If you share me, you no longer have me. What am I?",
+    "options": ["Secret", "Money", "Time", "Name"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What runs but never walks, has a mouth but never talks?",
+    "options": ["River", "Car", "Clock", "Wind"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What is always coming but never arrives?",
+    "options": ["Tomorrow", "Friday", "Sunset", "The bus"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What can travel around the world while staying in a corner?",
+    "options": ["Sunlight", "A stamp", "A shadow", "Sound"],
+    "correctIndex": 1
+  },
+  {
+    "text": "Which number should replace the question mark: 2, 4, 8, 16, ?",
+    "options": ["18", "24", "32", "20"],
+    "correctIndex": 2
+  },
+  {
+    "text": "How many times can you subtract 5 from 25?",
+    "options": ["1", "5", "0", "25"],
+    "correctIndex": 0
+  },
+  {
+    "text": "If the day after tomorrow is two days before Thursday, what day is it today?",
+    "options": ["Sunday", "Monday", "Tuesday", "Wednesday"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What has one eye but cannot see?",
+    "options": ["Needle", "Storm", "Hurricane", "Potato"],
+    "correctIndex": 0
+  },
+  {
+    "text": "Which month has 28 days?",
+    "options": ["February", "All of them", "January", "March"],
+    "correctIndex": 1
+  },
+  {
+    "text": "If five cats catch five mice in five minutes, how many cats are needed to catch 100 mice in 100 minutes?",
+    "options": ["5", "10", "20", "25"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What is the next number in the sequence 1, 1, 2, 3, 5, 8, ?",
+    "options": ["10", "11", "13", "14"],
+    "correctIndex": 2
+  },
+  {
+    "text": "A man walks 1 mile south, 1 mile west, and 1 mile north and returns to his start. Where is he?",
+    "options": ["At the equator", "At the North Pole", "At the South Pole", "At the Prime Meridian"],
+    "correctIndex": 1
+  },
+  {
+    "text": "If you buy a rooster for the purpose of laying eggs, how many eggs will you get?",
+    "options": ["0", "1", "2", "Depends"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What disappears as soon as you say its name?",
+    "options": ["Silence", "Noise", "Secret", "Shadow"],
+    "correctIndex": 0
+  },
+  {
+    "text": "Which weighs more, a kilogram of feathers or a kilogram of lead?",
+    "options": ["Feathers", "Lead", "They weigh the same", "Cannot tell"],
+    "correctIndex": 2
+  },
+  {
+    "text": "If a plane crashes on the border between two countries, where do you bury survivors?",
+    "options": ["In either country", "Nowhere", "In the country of origin", "At the crash site"],
+    "correctIndex": 1
+  },
+  {
+    "text": "You see me once in June, twice in November, and not at all in May. What am I?",
+    "options": ["The letter E", "A full moon", "A weekend", "A holiday"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What comes down but never goes up?",
+    "options": ["Rain", "Age", "A ball", "Heat"],
+    "correctIndex": 0
+  },
+  {
+    "text": "I have cities, but no houses; forests, but no trees; and water, but no fish. What am I?",
+    "options": ["Map", "Dream", "Painting", "Book"],
+    "correctIndex": 0
+  },
+  {
+    "text": "If there are three apples and you take away two, how many do you have?",
+    "options": ["1", "2", "3", "0"],
+    "correctIndex": 1
+  },
+  {
+    "text": "A word is spelled the same forwards and backwards. What is it?",
+    "options": ["Racecar", "Hello", "World", "Magic"],
+    "correctIndex": 0
+  },
+  {
+    "text": "If you turn me on my side I am everything. Cut me in half and I am nothing. What am I?",
+    "options": ["8", "0", "1", "∞"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What begins with T, ends with T, and has T in it?",
+    "options": ["Teapot", "Toast", "Tent", "Tulip"],
+    "correctIndex": 0
+  },
+  {
+    "text": "The more you take, the more you leave behind. What am I?",
+    "options": ["Footsteps", "Time", "Memories", "Bread crumbs"],
+    "correctIndex": 0
+  },
+  {
+    "text": "If a clock shows 3:15, what is the angle between the hour and minute hands?",
+    "options": ["7.5°", "15°", "30°", "45°"],
+    "correctIndex": 0
+  },
+  {
+    "text": "Which number completes the pattern: 2, 6, 12, 20, ?",
+    "options": ["24", "30", "36", "40"],
+    "correctIndex": 1
+  },
+  {
+    "text": "What goes up but never comes back down?",
+    "options": ["Age", "Balloon", "Smoke", "Heat"],
+    "correctIndex": 0
+  },
+  {
+    "text": "If you multiply this number by any other number the answer will always be the same. What number is it?",
+    "options": ["0", "1", "2", "10"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What has a head, a tail, but no body?",
+    "options": ["A comet", "A coin", "A snake", "A kite"],
+    "correctIndex": 1
+  },
+  {
+    "text": "If you have 3 apples and you take 4, how many do you have?",
+    "options": ["3", "4", "-1", "Impossible"],
+    "correctIndex": 1
+  },
+  {
+    "text": "What can be broken without being held?",
+    "options": ["Glass", "Promise", "Heart", "Record"],
+    "correctIndex": 1
+  },
+  {
+    "text": "Two fathers and two sons spent the day fishing and caught three fish. Each person had one fish. How is this possible?",
+    "options": ["A mistake", "There are three people: grandfather, father, son", "They shared", "One fish was bad"],
+    "correctIndex": 1
+  },
+  {
+    "text": "You walk into a room with a match, a candle, and a fireplace. Which do you light first?",
+    "options": ["Match", "Candle", "Fireplace", "Room"],
+    "correctIndex": 0
+  },
+  {
+    "text": "A farmer has 17 sheep and all but 9 die. How many are left?",
+    "options": ["8", "9", "17", "0"],
+    "correctIndex": 1
+  },
+  {
+    "text": "What can fill a room but takes up no space?",
+    "options": ["Air", "Sound", "Light", "Smoke"],
+    "correctIndex": 2
+  },
+  {
+    "text": "What has many teeth but cannot bite?",
+    "options": ["Comb", "Saw", "Zipper", "Gear"],
+    "correctIndex": 0
+  },
+  {
+    "text": "If it takes 5 machines 5 minutes to make 5 widgets, how long for 100 machines to make 100 widgets?",
+    "options": ["5 minutes", "20 minutes", "100 minutes", "50 minutes"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What number is spelled with the same number of letters as its value?",
+    "options": ["Four", "Three", "Five", "Seven"],
+    "correctIndex": 0
+  },
+  {
+    "text": "I shrink smaller every time I take a bath. What am I?",
+    "options": ["Soap", "Sponge", "Towel", "Bubble"],
+    "correctIndex": 0
+  },
+  {
+    "text": "What invention lets you look right through a wall?",
+    "options": ["Window", "Door", "Mirror", "Microscope"],
+    "correctIndex": 0
+  },
+  {
+    "text": "If you drop me I'm sure to crack, but smile at me and I'll smile back. What am I?",
+    "options": ["Egg", "Mirror", "Plate", "Window"],
+    "correctIndex": 1
+  },
+  {
+    "text": "What tastes better than it smells?",
+    "options": ["Knife", "Tongue", "Nose", "Food"],
+    "correctIndex": 1
+  },
+  {
+    "text": "I fly without wings. I cry without eyes. What am I?",
+    "options": ["Cloud", "Wind", "Smoke", "Storm"],
+    "correctIndex": 0
+  },
+  {
+    "text": "Which weighs more, a pound of gold or a pound of feathers?",
+    "options": ["Gold", "Feathers", "They weigh the same", "Gold if measured in troy"],
+    "correctIndex": 2
+  },
+  {
+    "text": "What begins with an 'e' and only contains one letter?",
+    "options": ["Envelope", "Eagle", "Ear", "Eye"],
+    "correctIndex": 0
+  }
+],  
   "Paintings & Artists": [
     {
       "text": "Who painted the Mona Lisa?",
