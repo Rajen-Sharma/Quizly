@@ -8,6 +8,14 @@
         {
           "name": "Logic Puzzles",
           "icon": "🧩"
+        },
+        {
+          "name": "Riddles",
+          "icon": "🎭"
+        },
+        {
+          "name": "Number Puzzles",
+          "icon": "🔢"
         }
       ]
     },
@@ -587,7 +595,1011 @@
     "options": ["Envelope", "Eagle", "Ear", "Eye"],
     "correctIndex": 0
   }
-],  
+],
+  "Riddles": [
+    {
+      "text": "I speak without a mouth and hear without ears. I come alive with wind. What am I?",
+      "options": [
+        "A shadow",
+        "An echo",
+        "The wind",
+        "A ghost"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "The more you take, the more you leave behind. What am I?",
+      "options": [
+        "Time",
+        "Money",
+        "Footsteps",
+        "Memories"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "I have cities but no houses, mountains but no trees, water but no fish. What am I?",
+      "options": [
+        "A painting",
+        "A dream",
+        "A map",
+        "A globe"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What can you catch but never throw?",
+      "options": [
+        "A ball",
+        "A cold",
+        "A fish",
+        "The wind"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What has a neck but no head?",
+      "options": [
+        "A snake",
+        "A bottle",
+        "A giraffe",
+        "A guitar"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What gets wetter as it dries?",
+      "options": [
+        "A sponge",
+        "A raincoat",
+        "A towel",
+        "Sand"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "I have teeth but never bite. What am I?",
+      "options": [
+        "A zipper",
+        "A shark jaw",
+        "A comb",
+        "A saw"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What comes once in a minute, twice in a moment, but never in a thousand years?",
+      "options": [
+        "The letter M",
+        "A heartbeat",
+        "A second",
+        "A breath"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "text": "The more there is of me, the less you see. What am I?",
+      "options": [
+        "Light",
+        "Fog",
+        "Darkness",
+        "Space"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What belongs to you, but others use it more than you do?",
+      "options": [
+        "Your shadow",
+        "Your smile",
+        "Your name",
+        "Your voice"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What goes up but never comes down?",
+      "options": [
+        "A balloon",
+        "Your age",
+        "A rocket",
+        "Smoke"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "I'm light as a feather, yet the strongest person can't hold me for more than 5 minutes. What am I?",
+      "options": [
+        "A secret",
+        "Water",
+        "Breath",
+        "Smoke"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What has an eye but cannot see?",
+      "options": [
+        "A needle",
+        "A camera",
+        "A telescope",
+        "A mirror"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "text": "What runs but has no legs, has a mouth but never talks, and has a bed but never sleeps?",
+      "options": [
+        "A road",
+        "A train",
+        "A river",
+        "A clock"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "I have hands but cannot clap. What am I?",
+      "options": [
+        "A statue",
+        "A scarecrow",
+        "A clock",
+        "A glove"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What has four legs in the morning, two in the afternoon, and three in the evening?",
+      "options": [
+        "A dog",
+        "A human being",
+        "A chair",
+        "A clock"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What can fill a room but takes up no space?",
+      "options": [
+        "Sound",
+        "Light",
+        "Air",
+        "Scent"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "The more you remove from me, the bigger I get. What am I?",
+      "options": [
+        "A shadow",
+        "A hole",
+        "A balloon",
+        "A cave"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What has a thumb and four fingers but is not a hand?",
+      "options": [
+        "A mitten",
+        "A star",
+        "A glove",
+        "A cactus"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What word is spelled incorrectly in every dictionary in the world?",
+      "options": [
+        "Dictionary",
+        "Incorrectly",
+        "Alphabet",
+        "Misspelled"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What can travel around the world without ever moving from its place?",
+      "options": [
+        "A satellite",
+        "A stamp",
+        "A radio signal",
+        "News"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What is always in front of you but can never be seen?",
+      "options": [
+        "Your nose",
+        "The future",
+        "Air",
+        "Your blind spot"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What has many holes but can still hold a lot of water?",
+      "options": [
+        "A bucket",
+        "A net",
+        "A sponge",
+        "Swiss cheese"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What is so fragile that just saying its name breaks it?",
+      "options": [
+        "A promise",
+        "Glass",
+        "Silence",
+        "A dream"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What starts with E, ends with E, but only contains one letter?",
+      "options": [
+        "An eagle",
+        "An envelope",
+        "An engine",
+        "An empire"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What has one head, one foot, and four legs?",
+      "options": [
+        "A horse",
+        "A table",
+        "A bed",
+        "A dog"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What has six faces, twenty-one eyes, and cannot see?",
+      "options": [
+        "A spider",
+        "A clock",
+        "A die",
+        "A domino"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What building has the most stories?",
+      "options": [
+        "A skyscraper",
+        "A library",
+        "A museum",
+        "An office tower"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What has 13 hearts but no other organs?",
+      "options": [
+        "A cactus",
+        "A deck of cards",
+        "A hospital",
+        "A puzzle"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What word becomes shorter when you add two letters to it?",
+      "options": [
+        "Tiny",
+        "Short",
+        "Brief",
+        "Small"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What can you always find at the very end of a rainbow?",
+      "options": [
+        "Gold",
+        "Happiness",
+        "The letter W",
+        "A pot"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What goes through towns and over hills but never moves?",
+      "options": [
+        "A river",
+        "A road",
+        "The wind",
+        "Clouds"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "I grow without being alive, I need air but have no lungs, and water kills me. What am I?",
+      "options": [
+        "A plant",
+        "Mold",
+        "Fire",
+        "A candle"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What can you break without ever picking it up or touching it?",
+      "options": [
+        "A vase",
+        "An egg",
+        "A promise",
+        "A window"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What has no legs but can walk, no arms but can climb, no wings but can rise?",
+      "options": [
+        "A cloud",
+        "Smoke",
+        "A ghost",
+        "Steam"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What do you throw out when you want to use it, and pull in when you do not need it?",
+      "options": [
+        "A fishing rod",
+        "A kite",
+        "A boomerang",
+        "An anchor"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "text": "What has a bottom at the top?",
+      "options": [
+        "A well",
+        "A glass",
+        "Your legs",
+        "A bag"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "The more you give of me, the more you have. What am I?",
+      "options": [
+        "Money",
+        "Food",
+        "Love",
+        "Time"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What is black when you buy it, red when you use it, and gray when you throw it away?",
+      "options": [
+        "Coal",
+        "Charcoal",
+        "A pen",
+        "A matchstick"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What has a head and a tail but no body?",
+      "options": [
+        "A coin",
+        "A snake",
+        "A comet",
+        "A fish"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "text": "What kind of room has no windows or doors?",
+      "options": [
+        "A vault",
+        "A submarine cabin",
+        "A mushroom",
+        "A dungeon"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What comes down but never goes up?",
+      "options": [
+        "A ball",
+        "Rain",
+        "The sun",
+        "A kite"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What flies without wings?",
+      "options": [
+        "A kite",
+        "Time",
+        "A paper plane",
+        "A frisbee"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What has a tongue but cannot taste, and helps you run without having legs of its own?",
+      "options": [
+        "A river",
+        "A shoe",
+        "A road",
+        "A snake"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What gets sharper the more you use it?",
+      "options": [
+        "A knife",
+        "A pencil",
+        "Your brain",
+        "A saw"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "The more you use me, the smaller I get. I help you fix mistakes. What am I?",
+      "options": [
+        "A pencil",
+        "An eraser",
+        "Correction fluid",
+        "A sharpener"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What has a ring but no finger?",
+      "options": [
+        "A jewel box",
+        "A tree",
+        "A telephone",
+        "A planet"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What runs all around a yard but never moves?",
+      "options": [
+        "A dog",
+        "A sprinkler",
+        "A fence",
+        "Grass"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What is always coming but never arrives?",
+      "options": [
+        "A train",
+        "Tomorrow",
+        "The horizon",
+        "Your destiny"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What can you keep even after giving it away to someone else?",
+      "options": [
+        "A gift",
+        "A hug",
+        "Your word",
+        "A secret"
+      ],
+      "correctIndex": 2
+    }
+  ],
+  "Number Puzzles": [
+    {
+      "text": "If you have 3 apples and you take away 2, how many apples do YOU have?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "A farmer has 17 sheep. All but 9 run away. How many sheep remain?",
+      "options": [
+        "8",
+        "9",
+        "17",
+        "0"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "How many months of the year have 28 days?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "12"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "text": "A rooster lays an egg on top of a peaked roof. Which way does it roll?",
+      "options": [
+        "Left",
+        "Right",
+        "Roosters don’t lay eggs",
+        "Straight down"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What is the next number in the sequence: 2, 4, 8, 16, ___?",
+      "options": [
+        "24",
+        "30",
+        "32",
+        "20"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "If 5 cats catch 5 mice in 5 minutes, how many cats are needed to catch 100 mice in 100 minutes?",
+      "options": [
+        "100",
+        "50",
+        "20",
+        "5"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "text": "A bat and ball cost $1.10 together. The bat costs $1 more than the ball. How much does the ball cost?",
+      "options": [
+        "10 cents",
+        "5 cents",
+        "15 cents",
+        "20 cents"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What comes next in the Fibonacci sequence: 1, 1, 2, 3, 5, 8, 13, ___?",
+      "options": [
+        "18",
+        "20",
+        "21",
+        "24"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "If you divide 30 by half and add 10, what do you get?",
+      "options": [
+        "25",
+        "45",
+        "60",
+        "70"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "text": "Mary's father has 5 children: Nana, Nene, Nini, Nono. What is the fifth child's name?",
+      "options": [
+        "Nunu",
+        "Nana",
+        "Mary",
+        "Nene"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "I am an odd number. Remove one letter and I become even. What number am I?",
+      "options": [
+        "Five",
+        "Seven",
+        "Nine",
+        "Three"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "How many times can you subtract 10 from 100?",
+      "options": [
+        "10 times",
+        "9 times",
+        "Once",
+        "5 times"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "A snail climbs 3 feet up a wall each day but slides 2 feet back each night. How many days to reach 10 feet?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What 4-digit number, multiplied by 9, gives its own digits in reverse?",
+      "options": [
+        "1089",
+        "1098",
+        "9801",
+        "1111"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "text": "Two fathers and two sons sit down to eat. There are only 3 eggs, yet each person gets one. How?",
+      "options": [
+        "One egg was halved",
+        "One egg was still raw",
+        "They are grandfather, father and son",
+        "One person had two"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "If you double a penny every day for 30 days, how much do you have on day 30?",
+      "options": [
+        "$10,000",
+        "$1 million",
+        "Over $10 million",
+        "$100,000"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "A store buys an item for $7, sells it for $8, buys it back for $9, then sells it for $10. What is the total profit?",
+      "options": [
+        "$1",
+        "$2",
+        "$3",
+        "No profit"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What comes next in the sequence: 1, 4, 9, 16, 25, ___?",
+      "options": [
+        "30",
+        "35",
+        "36",
+        "42"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "You overtake the runner in 2nd place in a race. What position are you now in?",
+      "options": [
+        "1st",
+        "2nd",
+        "3rd",
+        "It depends"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What is the missing number: 2, 6, 12, 20, 30, ___?",
+      "options": [
+        "40",
+        "42",
+        "44",
+        "48"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "A third of twelve is four. How?",
+      "options": [
+        "It isn't",
+        "Using Roman numerals: XII divided by 3 = IV",
+        "In base 6",
+        "With fractions"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "There are 10 birds in a tree. A hunter shoots 3. How many remain in the tree?",
+      "options": [
+        "7",
+        "10",
+        "0",
+        "3"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What is 2 to the power of 10?",
+      "options": [
+        "512",
+        "1000",
+        "1024",
+        "2048"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "If today is Wednesday, what day of the week was it 100 days ago?",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Sunday",
+        "Thursday"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "text": "A plane crashes exactly on the border of two countries. Where are the survivors buried?",
+      "options": [
+        "In the nearest country",
+        "Both countries share",
+        "Survivors are not buried",
+        "The captain decides"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "How many squares are there in total on a standard 8x8 chessboard?",
+      "options": [
+        "64",
+        "128",
+        "204",
+        "256"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "If it took 8 workers 10 hours to build a wall, how long would 4 workers take?",
+      "options": [
+        "5 hours",
+        "10 hours",
+        "20 hours",
+        "40 hours"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What is the next prime number after 11?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "How many times does the digit 9 appear when counting from 1 to 100?",
+      "options": [
+        "9",
+        "10",
+        "19",
+        "20"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "text": "What is 1 + 1 in binary?",
+      "options": [
+        "2",
+        "10",
+        "11",
+        "1"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What is the minimum number of straight lines needed to connect all 9 dots in a 3x3 grid without lifting your pen?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "9"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "text": "I am a 2-digit number. Reversed, I am 45 more than the original. What am I?",
+      "options": [
+        "16",
+        "27",
+        "38",
+        "49"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "If a number is divisible by both 2 and 3, it must also be divisible by what?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "12"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What 3 positive whole numbers give the same result when added as when multiplied?",
+      "options": [
+        "1, 2, 3",
+        "2, 2, 2",
+        "1, 1, 2",
+        "1, 2, 4"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "text": "A man is born in room 1970 and dies in room 1940. How is this possible?",
+      "options": [
+        "Time travel",
+        "He lived in Australia",
+        "1970 and 1940 are hospital room numbers",
+        "It is impossible"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What is the missing number: 1, 8, 27, 64, ___, 216?",
+      "options": [
+        "100",
+        "125",
+        "144",
+        "150"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Three cards in a row: 6 is right of 5; 5 is left of 2; 2 is left of 6. What is the order?",
+      "options": [
+        "5, 6, 2",
+        "5, 2, 6",
+        "2, 5, 6",
+        "6, 5, 2"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "How many times can you subtract 5 from 25?",
+      "options": [
+        "5 times",
+        "Once",
+        "Infinitely",
+        "4 times"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What is the fewest number of moves to solve a 3-ring Tower of Hanoi?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "In a 3x3 magic square using numbers 1 to 9, what number is always in the centre?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "If 3 cats catch 3 rats in 3 minutes, how many cats are needed to catch 100 rats in 100 minutes?",
+      "options": [
+        "100",
+        "33",
+        "3",
+        "1"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What is the 100th odd number?",
+      "options": [
+        "199",
+        "200",
+        "201",
+        "197"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "text": "A clock loses 5 minutes every hour. It shows the correct time now. How many hours until it next shows the correct time?",
+      "options": [
+        "12 hours",
+        "Never",
+        "144 hours",
+        "6 hours"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What is 40% of 50% of 200?",
+      "options": [
+        "20",
+        "40",
+        "50",
+        "60"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What is the last digit of 7 to the power of 100?",
+      "options": [
+        "1",
+        "3",
+        "7",
+        "9"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "text": "With 23 random people in a room, what is the approximate chance that two share a birthday?",
+      "options": [
+        "Less than 10%",
+        "About 25%",
+        "About 50%",
+        "Over 50%"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "text": "What number, when you multiply it by itself, gives the same result as adding it to itself?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "What is the sum of all whole numbers from 1 to 100?",
+      "options": [
+        "5000",
+        "5050",
+        "4950",
+        "5100"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "What is the next number in this sequence: 3, 3, 5, 4, 4, 3, 5, 5, ___? (Hint: count the letters in each number name)",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "If you had a single grain of rice on square 1 of a chessboard and doubled it each square, roughly how many grains would be on square 64?",
+      "options": [
+        "1 billion",
+        "1 trillion",
+        "More than all rice ever grown",
+        "64 billion"
+      ],
+      "correctIndex": 2
+    }
+  ],
   "Paintings & Artists": [
     {
       "text": "Who painted the Mona Lisa?",
