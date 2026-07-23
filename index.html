@@ -51,16 +51,16 @@
   }
 
   .nav-logo {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.35rem;
-    color: var(--heading);
-    text-decoration: none;
-    letter-spacing: -0.01em;
-  }
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+ }
 
-  .nav-logo span {
-    color: var(--accent);
-  }
+ .nav-logo img {
+  display: block;
+  width: auto;
+  height: 38px;
+ }
 
   .nav-links {
     display: flex;
@@ -592,7 +592,9 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Quantix<span>Labs</span></a>
+  <a href="#" class="nav-logo">
+   <img src="/quantixlabs-logo.png" alt="QuantixLabs">
+  </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#apps">Apps</a></li>
